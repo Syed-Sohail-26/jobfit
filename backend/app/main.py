@@ -6,7 +6,8 @@ app = FastAPI(title="JobFit API", version="0.1.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173",
-    "https://jobfit-puce.vercel.app/"]
+    "https://jobfit-puce.vercel.app",
+    ]
     ,  # Vite dev server; add Vercel URL on day 2
     allow_credentials=True,
     allow_methods=["*"],

@@ -4,7 +4,7 @@ function App() {
   const [status, setStatus] = useState("checking...");
 
   useEffect(() => {
-    fetch("https://jobfit-api.onrender.com/health")
+    fetch("https://jobfit-api-1zdv.onrender.com/health")
       .then((r) => r.json())
       .then((d) => setStatus(`${d.service} is ${d.status} (v${d.version})`))
       .catch(() => setStatus("backend unreachable"));
